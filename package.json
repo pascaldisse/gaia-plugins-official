@@ -1,0 +1,24 @@
+{
+  "name": "gaia-plugins-official",
+  "version": "1.0.0",
+  "description": "gaia-daemon bundled command plugins (fugu, rpg, rpg-engine) as one pi package; pi git: sources have no subpath, hence one repo.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pascaldisse/gaia-plugins-official.git"
+  },
+  "keywords": [
+    "pi",
+    "pi-extension",
+    "pi-package",
+    "gaia-daemon"
+  ],
+  "pi": {
+    "extensions": [
+      "./fugu/pi-extension.mjs",
+      "./rpg/pi-extension.mjs",
+      "./rpg-engine/pi-extension.mjs"
+    ]
+  }
+}
